@@ -99,9 +99,7 @@ section table {
     padding: 0.5rem;
     border: 1px solid var(--color-acento);
   }
-  .empresa {
-    width: 19rem;
-  }
+ 
 }
 
 #social-media {
