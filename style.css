@@ -1,95 +1,168 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
 
 :root {
-    --color-secundario:#d4dbd6;
-    --color-principal:#EEE0CB;
-    --color-acento:#839788;
-    --color-texto:#212529;
-    --color-texto-secundario:#6c757d;
+  --color-secundario: #d4dbd6;
+  --color-principal: #EEE0CB;
+  --color-acento: #839788;
+  --color-texto: #212529;
+  --color-texto-secundario: #6c757d;
 }
-.container{
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    background-color: var(--color-secundario);
+.container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  background-color: var(--color-secundario);
 }
-.menu{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1rem;
-    background-color: var(--color-principal);
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: var(--color-principal);
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        list-style: none;
-    };
-
-    a {
-        text-decoration: none;
-        color: var(--color-texto);
-        margin: 0 10px;
-        font-weight: lighter;
-    }
-   
-}
-.logo-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .logo{
-        height: 4rem;
-        width: 4rem;
-        background: var(--color-acento);
-        border-radius: 50%;
-    }
-    .logo-text{
-        color: var(--color-texto);
-        font-size: 1.4rem;
-        font-weight: bolder;
-        line-height: 1.8rem;
-    }
-}
-
-
-.main{
-    overflow: auto;
+  ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    height: 100vh;
-    background-color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+    list-style: none;
+  }
 
-.encabezado{
-    background-color: white;
-    width: 100%;
-    border-bottom: black  1px solid;
-    padding-top: 20px ;
-    padding-bottom: 20px;
-}
+  a {
+    text-decoration: none;
+    color: var(--color-texto);
+    margin: 0 10px;
 
-section table{
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid var(--color-secundario);
-    margin: 1rem 0;
-    th{
-        background-color: var(--color-acento);
-        padding: 0.5rem;
+    &:hover {
+      color: var(--color-acento);
     }
-    
+  }
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    height: 4rem;
+    width: 4rem;
+    background: var(--color-acento);
+    border-radius: 50%;
+  }
+  .logo-text {
+    color: var(--color-texto);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
 }
 
+.main {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  background-color: white;
+  section{
+    margin: 0 1rem ;
+  }
+}
 
+.encabezado {
+  padding-left: 1rem;
+  background-color: white;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+section table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid var(--color-secundario);
+  margin: 1rem 0;
+  th {
+    background-color: var(--color-acento);
+    opacity: 0.8;
+    padding: 0.5rem;
+  }
+  td {
+    padding: 0.5rem;
+    border: 1px solid var(--color-acento);
+  }
+  .empresa {
+    width: 19rem;
+  }
+}
+
+#social-media {
+  background-color: var(--color-acento);
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 4rem;
+  color: white;
+}
+.social-media-icons {
+  display: flex;
+  gap: 1rem;
+  img {
+    width: 40px;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    background: transparent;
+    padding: 0.5rem;
+    outline: none;
+    &::placeholder {
+      color: #d2d8dd;
+    }
+  }
+  .mensaje {
+    width: 100%;
+  }
+
+  button {
+    padding: 0.5rem 1.2rem;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--color-texto-secundario);
+    }
+  }
+}

@@ -18,7 +18,8 @@
           <li><a href="#infoPersonal">Información Personal </a></li>
           <li><a href="#formacion">Formación académica</a></li>
           <li><a href="#experiencia">Experiencia laboral</a></li>
-          <li><a href="#redes">Redes sociales</a></li>
+          <li><a href="#social-media">Redes sociales</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
       <main class="main">
@@ -49,7 +50,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>Juan Pérez</td>
+                <td>Andrea y Daimer </td>
                 <td>25</td>
                 <td>1234567890</td>
                 <td>abcdefghij@gmail.com</td>
@@ -100,6 +101,22 @@
                 <th>Numero</th>
               </tr>
             </thead>
+            <tbody>
+              <tr>
+                <td>Cédula de ciudadanía</td>
+                <td>Colombiano</td>
+                <td>1234567890</td>
+              </tr>
+              <tr>
+                <td>Pasaporte</td>
+                <td>Colombiano</td>
+                <td>0987654321</td>
+              </tr>
+              <tr>
+                <td>Licencia de conducir</td>
+                <td>Colombiano</td>
+                <td>1122334455</td>
+                </tr>
           </table>
           <table class="info-habilidades">
             <thead>
@@ -177,9 +194,9 @@
           <table>
             <thead>
               <tr>
-                <th>Empresa</th>
+                <th class="empresa">Empresa</th>
                 <th>Puesto</th>
-                <th>Años de experiencia</th>
+                <th >Experiencia</th>
                 <th>Funciones</th>
               </tr>
             </thead>
@@ -223,22 +240,34 @@
             </tbody>
           </table>
         </section>
-        <section id="redes">
-          <div>
-            <h2>Redes sociales</h2>
-          </div>
-          <div>
-            <div>logo</div>
-            <a href="#">Redes</a>
+        <section id="social-media">
+          <h2>Síguenos en redes sociales</h2>
+          <div class="social-media-icons">
+            <a href="https://www.youtube.com/" target="_blank" >
+              <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+              Youtube
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" >
+              <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn"  />
+              LinkedIn
+            </a>
+            <a href="https://twitter.com/" target="_blank" >
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X (Twitter)" />
+              Twitter
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" >
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"  />
+              WhatsApp
+            </a>
           </div>
         </section>
-        <footer>
+        <footer id="contacto">
           <h2>Contáctenos</h2>
           <form>
             <label>Nombre:</label>
-            <input placeholder="nombre" type="text" name="nombre" />
+            <input placeholder="Ejemplo" type="text" name="nombre" />
             <label>Mensaje:</label>
-            <textarea placeholder="Mensaje" name="mensaje"></textarea>
+            <input class="mensaje" placeholder="Escribe tu mensaje" name="mensaje"></textarea>
             <button type="submit">Enviar</button>
           </form>
         </footer>
