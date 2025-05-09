@@ -12,11 +12,13 @@
   --color-texto: #212529;
   --color-texto-secundario: #6c757d;
 }
+
 .container {
   display: grid;
   grid-template-columns: max-content 1fr;
   background-color: var(--color-secundario);
 }
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -41,6 +43,7 @@
     }
   }
 }
+
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -48,6 +51,7 @@
   align-items: center;
 
 }
+
 .logo {
   height: 4rem;
   width: 4rem;
@@ -70,8 +74,9 @@
   padding: 0 4rem;
   height: 100vh;
   background-color: white;
-  section{
-    margin: 0 1rem ;
+
+  section {
+    margin: 0 1rem;
   }
 }
 
@@ -91,16 +96,23 @@ section table {
   border-collapse: collapse;
   border: 1px solid var(--color-secundario);
   margin: 1rem 0;
-  th {
-    background-color: var(--color-acento);
-    opacity: 0.8;
-    padding: 0.5rem;
-  }
-  td {
-    padding: 0.5rem;
-    border: 1px solid var(--color-acento);
-  }
- 
+
+}
+
+
+td,
+th {
+  padding: 0.5rem;
+  border: 1px solid var(--color-acento);
+}
+
+#celda-combinada {
+  background-color: var(--color-acento);
+  text-align: center;
+}
+
+#formacion th, #experiencia th{
+  background-color: var(--color-acento);
 }
 
 #social-media {
@@ -112,12 +124,15 @@ section table {
   padding: 4rem;
   color: white;
 }
+
 .social-media-icons {
   display: flex;
   gap: 1rem;
+
   img {
     width: 40px;
   }
+
   a {
     text-decoration: none;
     display: flex;
@@ -139,16 +154,19 @@ form {
   align-items: center;
   gap: 1rem;
   width: 100%;
+
   input {
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 7px;
     background: transparent;
     padding: 0.5rem;
     outline: none;
+
     &::placeholder {
       color: #d2d8dd;
     }
   }
+
   .mensaje {
     width: 100%;
   }
@@ -160,6 +178,7 @@ form {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
     &:hover {
       background-color: var(--color-texto-secundario);
     }
